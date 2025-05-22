@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="site.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Y</title>
+</head>
+<body>
+    <div class="container">
+    <!--Título-->
+        <h1 class="nome">Nome do site</h1>
+        <!--Menu de navegação superior-->
+        <header class="cabecalho">
+            <nav class="nav">
+                <ul>
+                    <strong><li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#forms">Contato</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Login</a></li></strong>
+                </ul>
+            </nav>
+        </header>
+        <!--Sessão de início-->
+        <section id="inicio">
+            <h1>Bem-vindo ao site</h1>
+            <p>Site em construção que pode ser qualquer coisa futuramente</p>
+            <a href="?" class="btn">Mais informações</a>
+        </section>
+        <!--Sessão sobre nós-->
+        <section id="idsobrenos" class="sobrenos">
+            <h2>Somos um site em formação!</h2>
+            <p>Site que está sendo construído no curso introdução à programação na Fundação Bradesco</p>
+        </section>
+        <!--Sessão de cards de serviços-->
+        <section id="servicos">
+            <div class="cards">
+                <div class="card1">
+                    <h3>Pré-lançamento básico</h3>
+                    <p>notificação sobre o lançamento futuro do site</p>
+                    <p class="preco"><strong>R$3,99</p></strong>
+                </div>
+                <div class="card2">
+                    <h3>Pré-lançamento médio</h3>
+                    <p>Acesso antecipado ao lançamento do site</p>
+                    <p class="preco"><strong>R$9,99</p></strong>
+                </div>
+                <div class="card3">
+                    <h3>Pré-lançamento Super</h3>
+                    <p>Tudo dos planos anteriores, mas você nos apoia mais!</p>
+                    <p class="preco"><strong>R$18,99</p></strong>
+                </div>
+
+            </div>
+        </section>
+        <!--Sessão de formulários-->
+        <section id="forms">
+            <h2>Entre em contato com a gente !</h2>
+            <p>Preencha os campos abaixo</p>
+            <form class="form">
+                <label for="nome">Nome :</label>
+                <input type="text" placeholder="Seu nome" required>
+
+                <label for="e-mail">E-mail :</label>
+                <input type="email" placeholder="Seu e-mail">
+
+                <label for="mensagem">Mensagem :</label>
+                <textarea rows="5" placeholder="Sua mensagem"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
