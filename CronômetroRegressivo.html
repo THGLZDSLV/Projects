@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,23 @@
 </head>
 <body>
     <h1>Crônometro Regressivo</h1>
-    <input type="text" id="value">
+    <input type="number" id="caixa">
     <button id="botao">Cronometrar</button>
-    <p>Tempo Restante : <span id="restante"></span></p>
+    <p>Tempo Restante : <span id="restante">0</span></p>
     <script>
-        let tempo = document.getElementById('value').Value
-        let botao = document.getElementById('botao')
-        let restante = document.getElementById('restante')
-        let cronometro = setInterval(() => {
+        let numero = document.getElementById('restante')
+        document.getElementById('botao').addEventListener('click', () =>{
+            let tempo = document.getElementById('caixa').value
+            
+            let intervalo = setInterval(() => {
             tempo--
-            if (tempo <= 0){
-                alert('Tempo esgotado')
+            numero.textContent = tempo
+            if(tempo <= 0){
+                clearInterval(intervalo)
+                alert('tempo esgotado')
             }
-        })
-        botao.addEventListener('click', function(){
-            tempo.textContent = document.getElementById('value').Value
-        })
+        }, 1000)
+    })
     </script>
 </body>
 </html>
